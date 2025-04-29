@@ -6,27 +6,45 @@
   <title>Rumahku</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to bottom right, #fffbe0, #ffe4e1);
+      font-family: 'Poppins', 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #fffbe0, #ffe4e1);
       color: #2c2c2c;
       text-align: center;
       padding: 40px;
+      min-height: 100vh;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
     h1 {
-      font-size: 2em;
-      margin-bottom: 10px;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      letter-spacing: 1px;
+      color: #333;
+      transition: all 0.3s ease-in-out;
     }
     audio {
       margin: 20px 0;
+      outline: none;
     }
     .lyrics {
       white-space: pre-wrap;
-      background-color: #fefefe;
-      border-radius: 10px;
-      padding: 20px;
+      background: rgba(255, 255, 255, 0.4); /* Sedikit transparan */
+      border-radius: 20px;
+      padding: 30px;
       max-width: 800px;
       margin: 30px auto;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(8px); /* Efek blur latar belakang */
+      transition: all 0.3s ease;
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+    .lyrics:hover {
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+      transform: translateY(-5px);
     }
   </style>
 </head>
@@ -37,7 +55,11 @@
     Browser Anda tidak mendukung pemutar audio.
   </audio>
   <div class="lyrics">
-
+    <!-- Isi lirik bisa ditulis di sini -->
+    Selamat datang di rumahku
+    Tempat semua cerita bermula
+    Hangatnya pelukan kasih
+    Membawa damai di hatiku
   </div>
 </body>
 </html>
